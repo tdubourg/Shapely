@@ -74,12 +74,22 @@ def occlusion(int mpos_x, int mpos_y, obs, int sz):
     except ValueError as e:
         print "ValueError Exception when difference():", e
         sight = Polygon([[0,0], [1,1], [2,2]])
-    blorg_points = [0.0] * (4*len(sight.exterior.coords))
-    i=0
-    for (x, y) in sight.exterior.coords:
-        blorg_points[i] = x
-        blorg_points[i+1] = y
-        blorg_points[i+2] = 0.0
-        blorg_points[i+3] = 0.0
-        i += 4
-    return blorg_points
+    try:
+        blorg_points = [0.0] * (4*len(sight.exterior.coords))
+        i=0
+        for (x, y) in sight.exterior.coords:
+            blorg_points[i] = x
+            blorg_points[i+1] = y
+            blorg_points[i+2] = 0.0
+            blorg_points[i+3] = 0.0
+            i += 4
+        return blorg_points
+    except AttributeError:  # it certainly is a multipolygon
+        blorg_points = []
+        for p in sight:
+            for (x, y) in p.exterior.coords:
+                blorg_points.append(x)
+                blorg_points.append(y)
+                blorg_points.append(0.0)
+                blorg_points.append(0.0)
+        return blorg_points
