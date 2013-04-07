@@ -11,12 +11,12 @@ __all__= ['occlusion']
 #     return _occlusion(mpos_x, mpos_y, obs)
 DEF coeff = 20
 DEF SUBARRAY_SIZE = 8
-def occlusion(int mpos_x, int mpos_y, obs, int sz, int sight_triangle_width, int sight_triangle_height):
+def occlusion(int mpos_x, int mpos_y, sight_polygon_coordinates, obs, int sz):
     # cdef int coeff = 20
     cdef int m[2] 
     m[0] = mpos_x
     m[1] = mpos_y
-    sight = Polygon([[mpos_x, mpos_y], [mpos_x - sight_triangle_width/2, mpos_y + sight_triangle_height], [mpos_x + sight_triangle_width/2, mpos_y + sight_triangle_height]])
+    sight = Polygon(sight_polygon_coordinates)
     _l = sz
     polygons = []
 
