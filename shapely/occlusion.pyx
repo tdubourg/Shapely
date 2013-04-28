@@ -81,7 +81,7 @@ def occlusion(int mpos_x, int mpos_y, sight_polygon_coordinates, obs, int sz):
             blorg_points[i+2] = 0.0
             blorg_points[i+3] = 0.0
             i += 4
-        return blorg_points
+        return (blorg_points, sight)
     except AttributeError:  # it certainly is a multipolygon
         blorg_points = []
         for p in sight:
@@ -90,4 +90,4 @@ def occlusion(int mpos_x, int mpos_y, sight_polygon_coordinates, obs, int sz):
                 blorg_points.append(y)
                 blorg_points.append(0.0)
                 blorg_points.append(0.0)
-        return blorg_points, sight
+        return (blorg_points, sight)

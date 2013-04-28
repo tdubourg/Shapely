@@ -523,7 +523,7 @@
 			"file": "shapely/occlusion.pyx",
 			"settings":
 			{
-				"buffer_size": 3090,
+				"buffer_size": 3101,
 				"line_ending": "Unix"
 			}
 		}
@@ -983,6 +983,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"return",
 			"self.w",
 			"p[1]",
 			"p[0]",
@@ -1109,8 +1110,7 @@
 			"ELEMENT",
 			"new Element(",
 			"new Element",
-			"throw",
-			"args_str"
+			"throw"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1229,15 +1229,15 @@
 					"file": "shapely/occlusion.pyx",
 					"settings":
 					{
-						"buffer_size": 3090,
+						"buffer_size": 3101,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3089,
-								3089
+								2744,
+								2744
 							]
 						],
 						"settings":
@@ -1247,7 +1247,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 702.0,
+						"translation.y": 674.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1833,11 +1833,11 @@
 		"selected_items":
 		[
 			[
-				"spy",
+				"spyl",
 				"/home/troll/Dropbox/spylight-tutore/spylight.sublime-project"
 			],
 			[
-				"spyl",
+				"spy",
 				"/home/troll/Dropbox/spylight-tutore/spylight.sublime-project"
 			],
 			[
