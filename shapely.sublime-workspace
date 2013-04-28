@@ -519,13 +519,25 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "shapely/occlusion.pyx",
+			"settings":
+			{
+				"buffer_size": 3090,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 342.0,
+		"height": 92.0,
 		"selected_items":
 		[
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
 			[
 				"pro",
 				"Project: Save As"
@@ -553,10 +565,6 @@
 			[
 				"PROJ",
 				"Project: Save As"
-			],
-			[
-				"sspy",
-				"Set Syntax: Python"
 			],
 			[
 				"ssp",
@@ -783,7 +791,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 263.0
+		"width": 584.0
 	},
 	"console":
 	{
@@ -800,6 +808,8 @@
 	},
 	"file_history":
 	[
+		"/home/troll/Shapely/shapely/occlusion.c",
+		"/home/troll/Shapely/shapely/affinity.py",
 		"/home/troll/Dropbox/spylight-tutore/common/game_constants.py",
 		"/home/troll/Dropbox/st2/st2profile/Packages/User/Distraction Free.sublime-settings",
 		"/home/troll/Dropbox/st2/st2profile/Packages/User/Preferences.sublime-settings",
@@ -925,9 +935,7 @@
 		"/home/troll/Dropbox/Documents/TP-IF/4IF/ghome/code/js/server/sensors_server.js",
 		"/home/troll/Dropbox/Documents/TP-IF/4IF/ghome/code/js/server/sensors.js",
 		"/home/troll/Dropbox/Documents/TP-IF/4IF/ghome/code/js/server/scheduler_module.js",
-		"/home/troll/Dropbox/Documents/TP-IF/4IF/ghome/code/js/server/redirect.js",
-		"/home/troll/Dropbox/Documents/TP-IF/4IF/ghome/code/js/server/mainserver_simulator.js",
-		"/home/troll/Dropbox/Documents/TP-IF/4IF/ghome/code/js/server/events_monitor.js"
+		"/home/troll/Dropbox/Documents/TP-IF/4IF/ghome/code/js/server/redirect.js"
 	],
 	"find":
 	{
@@ -1213,8 +1221,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "shapely/occlusion.pyx",
+					"settings":
+					{
+						"buffer_size": 3090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3089,
+								3089
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 702.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
@@ -1276,6 +1313,18 @@
 		"selected_items":
 		[
 			[
+				"",
+				"occlusion.c"
+			],
+			[
+				"occl",
+				"occlusion.c"
+			],
+			[
+				"occlu",
+				"occlusion.c"
+			],
+			[
 				"game",
 				"server/game_engine.py"
 			],
@@ -1294,10 +1343,6 @@
 			[
 				"maptesthf",
 				"/home/troll/Dropbox/spylight-tutore/tests/map_test_action.hfm"
-			],
-			[
-				"",
-				"server/game_engine.py"
 			],
 			[
 				"tests/game",
@@ -1778,14 +1823,6 @@
 			[
 				"directindexinputstream",
 				"core/org/terrier/structures/DirectIndexInputStream.java"
-			],
-			[
-				"bitout",
-				"core/org/terrier/compression/BitOut.java"
-			],
-			[
-				"posting",
-				"core/org/terrier/structures/postings/Posting.java"
 			]
 		],
 		"width": 0.0
@@ -1795,6 +1832,14 @@
 		"height": 850.0,
 		"selected_items":
 		[
+			[
+				"spy",
+				"/home/troll/Dropbox/spylight-tutore/spylight.sublime-project"
+			],
+			[
+				"spyl",
+				"/home/troll/Dropbox/spylight-tutore/spylight.sublime-project"
+			],
 			[
 				"",
 				"/home/troll/love2d-physics-playground/l2dpp.sublime-project"

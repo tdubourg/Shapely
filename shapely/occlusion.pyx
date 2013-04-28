@@ -90,4 +90,4 @@ def occlusion(int mpos_x, int mpos_y, sight_polygon_coordinates, obs, int sz):
                 blorg_points.append(y)
                 blorg_points.append(0.0)
                 blorg_points.append(0.0)
-        return blorg_points
+        return blorg_points, sight
